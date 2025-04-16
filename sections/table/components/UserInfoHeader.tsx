@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar } from "@fichap-team/fichapui";
-import { UserType } from "../table.types";
+import { UserType } from "@/types/table";
+
 
 interface UserInfoHeaderProps {
   user: UserType;
