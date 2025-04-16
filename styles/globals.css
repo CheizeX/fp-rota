@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Mulish", sans-serif;
+  }
+}
+
+/* Estilos personalizados para scrollbars más elegantes */
+@layer utilities {
+  /* Optimizar y consolidar las reglas de ECharts */
+  .echarts-for-react *,
+  .echarts-tooltip *,
+  svg text {
+    font-family: "Mulish", sans-serif !important;
+  }
+
+  /* Aplicar estos estilos a toda la aplicación */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.3) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.3);
+    border-radius: 100px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(156, 163, 175, 0.5);
+  }
+}
